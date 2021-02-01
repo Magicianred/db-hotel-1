@@ -38,8 +38,6 @@ if (isset($parking)) {
 } else {
   $filteredArray = $hotels;
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -54,10 +52,10 @@ if (isset($parking)) {
 
 <body>
   <table class="table">
+
     <thead>
       <tr>
-        <?php
-        foreach ($filteredArray[0] as $key => $value) {
+        <?php foreach ($filteredArray[0] as $key => $value) {
         ?>
           <td>
             <h4 class="text-center"><?php echo $key; ?></h4>
@@ -65,9 +63,9 @@ if (isset($parking)) {
         <?php } ?>
       </tr>
     </thead>
+
     <tbody>
-      <?php
-      foreach ($filteredArray as $hotel) {
+      <?php foreach ($filteredArray as $hotel) {
       ?>
         <tr>
           <?php
@@ -88,6 +86,7 @@ if (isset($parking)) {
         </tr>
       <?php } ?>
     </tbody>
+    
   </table>
 </body>
 
